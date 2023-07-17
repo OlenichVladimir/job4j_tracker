@@ -32,4 +32,13 @@ public class PointTest {
         double out = a.distance(b);
         assertThat(out).isEqualTo(expected, offset(0.01));
     }
+
+    @Test
+    public void when567to8910then5dot19() {
+        Point a = new Point(5, 6, 7);
+        Point b = new Point(8, 9, 10);
+        double expected = 5.19;
+        double out = a.distance3d(b);
+        assertThat(out).isEqualTo(expected, offset(0.01));
+    }
 }
