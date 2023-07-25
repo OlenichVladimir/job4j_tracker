@@ -12,5 +12,6 @@ public class StartUI extends Item {
         System.out.println("Текущие дата и время после форматирования: " + item.getCreated().format(formatter));
         System.out.println("Текущие дата и время после форматирования: " + item.getCreated().format(formatter1));
         System.out.println("Текущие дата и время после форматирования: " + item.getCreated().format(formatter2));
+        System.out.println(item);
     }
 }
