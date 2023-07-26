@@ -14,6 +14,6 @@ public class MagicBall {
             default -> "Может быть";
         };
         String question = input.nextLine();
-        System.out.println(question + "\n" + answerSwitch);
+        System.out.println(question + System.lineSeparator() + answerSwitch);
     }
 }
