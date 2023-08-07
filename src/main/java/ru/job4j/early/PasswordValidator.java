@@ -38,6 +38,9 @@ public class PasswordValidator {
             if (Character.isDigit(symbol)) {
                 hasDigit = true;
             }
+            if (hasDigit && hasSpecial && hasLowCase && hasUpCase) {
+                break;
+            }
         }
         if (!hasUpCase) {
             throw new IllegalArgumentException(
