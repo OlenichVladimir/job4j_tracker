@@ -3,10 +3,6 @@ package ru.job4j.collection;
 import java.util.*;
 
 public class Citizen {
-    public Citizen() {
-        super();
-    }
-
     private String passport;
     private String username;
 
