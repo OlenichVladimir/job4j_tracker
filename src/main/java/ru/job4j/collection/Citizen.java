@@ -3,6 +3,10 @@ package ru.job4j.collection;
 import java.util.*;
 
 public class Citizen {
+    public Citizen() {
+        super();
+    }
+
     private String passport;
     private String username;
 
@@ -21,8 +25,12 @@ public class Citizen {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Citizen citizen = (Citizen) o;
         return Objects.equals(passport, citizen.passport);
     }
