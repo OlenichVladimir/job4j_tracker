@@ -3,15 +3,12 @@ package ru.job4j.tracker;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 class ItemAscByNameTest {
 
     @Test
-    void ItemAscByName() {
+    void sortAscByName() {
         Item item1 = new Item("Anton");
         Item item2 = new Item("Yakov");
         Item item3 = new Item("Gena");
